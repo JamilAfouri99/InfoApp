@@ -1,0 +1,61 @@
+.Contact_Us_Form{
+    background: #FFFCF3;
+    height: 80%;
+    padding: 5rem 0rem;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.formBox{
+    margin:0 auto;
+    background: #ec8a3e2f;
+    min-height: 32rem;
+    border: 5px solid orange;
+    color: #edf6f9;
+    border-radius: 4px;
+    padding: 2rem;
+    overflow: hidden;
+    position: relative;
+    width: 60%;
+    margin-bottom: 4rem;
+    transition: all 0.3s ease-in-out;
+}
+.dataBox{
+    width: 33%;
+    margin:0 auto;
+    height: 26rem;
+    background: #E66C0D;
+    color: #edf6f9;
+    border-radius: 4px;
+    padding: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:430px) {
+    .dataBox{
+        width: 40%;
+        transition: all 0.3s ease-in-out;
+    }
+    
+}
+@media (max-width:990px){
+    .formBox{
+        transition: all 0.3s ease-in-out;
+        width: 70%;
+    }
+    .dataBox{
+        transition: all 0.3s ease-in-out;
+        width: 70%;
+    }
+}
+@media (max-width:770px){
+    .formBox{
+        transition: all 0.3s ease-in-out;
+        width: 90%;
+    }
+    .dataBox{
+        transition: all 0.3s ease-in-out;
+        width: 90%;
+    }
+}

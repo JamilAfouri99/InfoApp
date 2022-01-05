@@ -1,0 +1,144 @@
+.Home_Body{
+    background-color: #FFFCF3;
+    overflow: hidden;
+    /* min-height: 100vh; */
+    overflow: hidden;
+}
+.firstPart{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    width: 100%;
+}
+.firstPartText{
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    margin: auto;
+    padding-left: 0;
+    padding: 2rem !important;
+}
+.firstPartText h2{
+    width: 75px;
+    height: 40px;
+    background: #E57128;
+    color: white;
+    text-align: center;
+}
+.firstPartText p{
+    font-size: 0.93rem;
+}
+.randomText{
+    padding: 3rem;
+}
+.secondPart{
+    background-color: #e66b0d85;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0rem 2rem
+}
+.secondPart div{
+    justify-content: center;
+}
+.secondPartText{
+    display: flex ;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin: auto;
+}
+.secondPartText h3{
+    color: white;
+    font-weight: bold;
+}
+.secondPartText button{
+    border: none;
+    width: 197px;
+    height: 50.75px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.secondPartText button:hover{
+    transition: all 0.2s ease-in-out;
+    background-color: #E66C0D;
+    color: white;
+}
+.firstPartImage img{ 
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.secondPartImage img{ 
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+@media (min-width:767px) {
+    .secondPartImage{
+        width: 50%;
+        overflow: hidden;
+        right: 5rem;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        /* padding-right: 2rem */
+    };
+    .firstPartImage{
+        margin: auto 0;
+        width: 40% !important;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    };
+}
+@media (max-width:767px) {
+    .secondPart{
+        padding: 2rem;
+        transition: all 0.5s ease-in-out;
+    };
+    .secondPartImage{
+        width: 90% !important;
+        transition: all 0.5s ease-in-out;
+    }
+    .firstPartImage{
+        width: 70% !important;
+        transition: all 0.5s ease-in-out;
+        margin: auto;
+    }
+    .secondPartText{
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+    }
+    .firstPartText{
+        margin-top: 2rem !important;
+        transition: all 0.5s ease-in-out;
+    }
+    .firstPartText h3{
+        margin-bottom: 2rem !important;
+    }
+    .randomText{
+        margin-top: -5rem !important;
+    }
+    .firstPartText h2{
+        height: 32px;
+    }
+}
+@media (max-width:500px) {
+    .secondPartText button{
+        width: 155px;
+        height: 40.75px;
+        transition: all 0.5s ease-in-out;
+    }
+}
+@media (max-width:320px) {
+    .secondPartText{
+        padding: 2rem 0rem;
+        transition: all 0.5s ease-in-out;
+    }
+}

@@ -1,0 +1,124 @@
+.Header{
+    background-color: #FFFCF3;
+    color: #49505B;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+.Header div img{    
+    width: 120px;
+    height: 35px;
+}
+.Header ul{    
+    list-style-type: none;
+    display: inline-flex;
+    margin-bottom:0
+}
+.Header ul li a{    
+    font-weight: none;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    transition: all 0.3s ease-in-out;
+    text-decoration:none;
+    color: #49505B;
+    font-weight: bold;
+}
+.Header ul li i{    
+    font-size:2rem;
+    transition: all 0.3s ease-in-out;
+}
+.Header ul li i:hover{    
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #E57128;
+}
+.Header ul li i:active{    
+    transform: scale(0.9);
+}
+.Header ul li a:hover{    
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #E57128;
+}
+.active{    
+    color: red;
+}
+/* Start working in navbar drop list  */
+.navDropList{
+    position: absolute;
+    top: -40%;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-color: #49505bed;
+    z-index: 1;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+.navDropList div, .navDropListShow div{
+    margin: 1.5rem;
+}
+.navDropList ul, .navDropListShow ul{
+    display: block;
+}
+.navDropList ul li a, .navDropListShow ul li a{
+    color: #FFFCF3;
+}
+.navDropList .closeNav ,.navDropListShow .closeNav{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    transform: translate(-5%,-5%);
+}
+.navDropList .closeNav i , .navDropListShow .closeNav i{
+    font-size: 2.7rem;
+    color: #E57128;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.navDropList .closeNav i:hover, .navDropListShow .closeNav i:hover{
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+}
+/* End working in navbar drop list  */
+/* Start handleing full navbar and drop navbar */
+.dropNav{
+    display: none;
+}
+.wideNave{
+    display: flex;
+}
+@media (max-width:500px) {
+    .dropNav{
+        display: flex;
+    }
+    .wideNave{
+        display: none;
+    }
+}
+/* End handleing full navbar and drop navbar */
+/* Start dealing with navbar transition to make it smoother  */
+.navDropListShow{
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-color: #49505bed;
+    z-index: 1;
+    padding: 2rem;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/* End dealing with navbar transition to make it smoother  */

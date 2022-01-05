@@ -1,0 +1,148 @@
+.formData form {
+    padding: 1rem;
+    color: #E66C0D;
+}
+
+.formData form div {
+    margin: 1.2rem 0rem;
+}
+
+.formData form div label {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.formData form button {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    width: 10rem;
+    height: 3rem;
+    background: #E66C0D !important;
+    border: none;
+    color: #f1faee;
+    font-size: 1.2rem;
+}
+
+.formData form button:active {
+    border: none !important;
+}
+
+.h3 {
+    flex: auto;
+    text-align: center;
+    font-size: 2rem;
+    color: #E66C0D;
+}
+
+/* Start location fields  */
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location label {
+    padding: 0 !important;
+}
+
+.location div {
+    color: #727272;
+    padding: 0 !important;
+    margin: 4px 5px !important;
+    width: 48%;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type=file] {
+    background: none;
+    border: none;
+    background-color: white;
+    width: 100%;
+    border: 1px solid #d4d1d1;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #727272;
+    height: 2.4rem;
+}
+
+input[type=file]::file-selector-button {
+    border: none;
+    height: 100%;
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: #E66C0D;
+    transition: 1s;
+    color: #212529;
+    margin-right: 0.6rem;
+}
+
+@media (max-width:1300px) {
+    .location div {
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+/* End location fields  */
+/* Start removing the bootstrap boxshadow  */
+input[type=text],
+input[type=link] {
+    border: none;
+}
+
+input[type=text]:focus,
+input[type=link]:focus {
+    border: none;
+    box-shadow: none;
+}
+
+select {
+    border: none !important;
+    transition: 1s
+}
+
+select:focus {
+    box-shadow: none !important;
+}
+
+/* End removing the bootstrap boxshadow  */
+/* Start build invalid fields (ERROR)  */
+.valid {
+    border: 3px solid #E66C0D !important;
+    background: #ffa50036 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.inValid {
+    border: 3px solid red !important;
+    background: #ff00001c !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.formData form div p {
+    color: red;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Start build invalid fields (ERROR)  */
+
+/* Start designing city div scroll  */
+select::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+select::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #f1f1f1;
+}
+select::-webkit-scrollbar-thumb {
+    background: #888;
+}
+select::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* End designing city div scroll  */

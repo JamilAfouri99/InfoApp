@@ -1,0 +1,50 @@
+.Footer{
+    margin: 0;
+    padding-bottom: 0.2rem;
+    background: #121212;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.Footer >div{
+    padding-top: 20px;
+    color: #edf6f9;
+}
+.Footer ul {
+    list-style-type: none;
+    display: -webkit-inline-box;
+    font-weight: bold;
+}
+.Footer ul li {
+    padding: 0rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.Footer ul li a{
+    color: #edf6f9;
+    text-decoration: none;
+}
+.Footer ul li a:hover {
+    color: #E57128;
+    transition: all 0.2s ease-in-out;
+}
+.Footer img{
+    width: 120px;
+    height: 35px;
+}
+@media (max-width:450px){
+    .Footer div{
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .Footer ul {
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+    .Footer ul li {
+        padding: 0.5rem 1rem;
+    }
+}
