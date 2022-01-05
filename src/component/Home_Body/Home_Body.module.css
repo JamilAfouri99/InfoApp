@@ -1,7 +1,6 @@
 .Home_Body{
     background-color: #FFFCF3;
     overflow: hidden;
-    /* min-height: 100vh; */
     overflow: hidden;
 }
 .firstPart{
@@ -84,7 +83,6 @@
         right: 5rem;
         position: relative;
         transition: all 0.5s ease-in-out;
-        /* padding-right: 2rem */
     };
     .firstPartImage{
         margin: auto 0;

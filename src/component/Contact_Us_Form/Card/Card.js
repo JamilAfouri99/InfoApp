@@ -11,7 +11,6 @@ const Card =(props)=>{
     return(
         <div className={`d-flex flex-column ${classes.Card}`}>
             <div className={classes.imgContainer}>
-                {/* <img src={src} className="img-thumbnail" alt={props.image}/> */}
                 <img src={src} className={classes.img} alt={props.image}/>
             </div>
             <div className={classes.nameContainer}>
